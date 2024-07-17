@@ -6,6 +6,7 @@ const Homepage = () => {
     <div>
       <Navbar/>
       <div className="flex items-center justify-center h-screen text-white bg-dark">
+        <ChatBot />
       </div>
     </div>
   )

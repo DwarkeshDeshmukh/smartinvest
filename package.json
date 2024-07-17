@@ -19,6 +19,7 @@
     "datatables.net-dt": "^2.0.3",
     "datatables.net-responsive": "^3.0.1",
     "jquery": "^3.7.1",
+    "pdfjs-dist": "^4.4.168",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.25.1"

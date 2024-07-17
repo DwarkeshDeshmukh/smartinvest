@@ -1,10 +1,9 @@
 import React from 'react'
-import Navbar from './Reuse/Navbar'
 
 const Loginpage = () => {
     return (
         <>
-        <div><Navbar/>
+        <div>
         <div className="flex items-center justify-center h-screen text-white bg-dark">
             <div className="bg-gray-800 p-4 rounded-lg w-96 max-w-120 mb-[80px]">
                 <img

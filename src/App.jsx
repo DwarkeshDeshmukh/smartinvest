@@ -1,18 +1,25 @@
-import { useState } from 'react'
-import './App.css'
-import Homepage from './components/Homepage';
+import { useState } from 'react';
+import './App.css';
 import Loginpage from './components/Loginpage';
 import Signuppage from './components/Signuppage';
 import Navbar from './components/Reuse/Navbar';
-import Table from './components/Reuse/Table';
-import Folders from './components/Folders';
-import { Tab } from '@headlessui/react';
+import Homepage from './components/Homepage';
+import Forcast from './components/Forcast';
+import TopStocks from './components/TopStocks';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  
   return (
-    <Folders />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Loginpage />} />
+        <Route path="/signup" element={<Signuppage />} />
+        <Route path="/forcast" element={<Forcast />} />
+        <Route path="/top-stocks" element={<TopStocks />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
